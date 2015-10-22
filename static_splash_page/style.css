@@ -4,14 +4,25 @@ html, body {
     padding: 0px;
 }
 
-h1 {
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #555;
+    min-height: 100%;
+    background-color: #eee;
+}
+
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+    outline: none;    
+}
+
+
+#logo {
 	text-align: center;
 	font-size: 800%;
 }
 
-h2 {
-	font-family: 'Montserrat', sans-serif;
-}
 #header {
     background-color: #000;
     #color: #fff;
@@ -37,17 +48,3 @@ h2 {
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-a, a:visited, a:active, a:hover {
-    text-decoration: none;
-    outline: none;    
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #555;
-    min-height: 100%;
-    background-color: #eee;
-}
-
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
