@@ -13,7 +13,7 @@ This is the code for the Django (http://djangoproject.com) project. To replicate
 
 5. Create local_settings.py under zakkio/local_settings.py . Example local_settings.py:
 
-```python
+  ```python
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
