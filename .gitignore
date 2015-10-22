@@ -55,3 +55,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Databases
+*.sqllite
+*.sqllite3
+*sql*
+local_settings.py
+*~
