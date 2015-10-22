@@ -1,0 +1,52 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<title>Zakk Lefkowits | Hompage</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		
+		function change() {
+			var base = 'I like to write code and '
+
+			var nouns = ['the Oxford comma.', 
+					'corporate America.', 
+      				     	'camelCasing.',
+				     	' the World Wide Web.',
+				     	'*nix.', 
+					'input/output.' ]
+
+			var actions = ['argue about ',
+					'get lost in thought thinking about ',
+					'get into fights over ',
+					'fantasize about ', 
+					'save small children from ']
+
+			var rand_idx_actions = Math.floor(Math.random() * actions.length)
+			var rand_idx_nouns = Math.floor(Math.random() * nouns.length)
+			document.getElementById("rotate").innerHTML = base + actions[rand_idx_actions] + nouns[rand_idx_nouns];
+		}
+	</script>
+</head>
+
+<body>
+	<!-- <div id="header"></div> -->
+	<h1>Zakk.io</h1>
+	<div id="container">
+		<div id="welcome">
+		<h2>Hi, My name is Zakk. </h2>
+		<h3 id="rotate"></h3></div>
+		<div id ="welcome">
+		<h3>I'm hard at work on the site, check back soon.</h3>
+		<h3>Check out the <a href="https://github.com/zakkl13/zakk.io/">source code</a> for this splash page, and the future webpage on Github.
+		<h3> If you want to get in touch, send me an email: <a href="zakk@zakk.io">Zakk@zakk.io</a></h3>
+		</div>
+    </div>
+	<script>
+		change()
+	</script>
+</body>
+</html>
