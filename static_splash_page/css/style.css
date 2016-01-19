@@ -1,26 +1,15 @@
-html, body {
-    height: 60%;
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #555;
-    min-height: 100%;
-    background-color: #eee;
+    background-color: #8AC6FF;
 }
 
 a, a:visited, a:active, a:hover {
     text-decoration: none;
-    outline: none;    
+    outline: none;
 }
-
 
 #logo {
 	text-align: center;
-	font-family: Monteserrat, sans-serif;
+  font-weight: 700;
 	font-size: 800%;
 }
 
@@ -32,12 +21,11 @@ a, a:visited, a:active, a:hover {
 	height: 70px
 }
 
-#container {
-    width: 900px;
-    margin: 0 auto;
-}
+/*#rotate {
+  font-size: 150%;
+}*/
 
-#welcome {
+.box {
     color: #000;
     padding: 10px;
 	padding-left: 15%;
@@ -47,4 +35,3 @@ a, a:visited, a:active, a:hover {
     margin-bottom: 0px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-

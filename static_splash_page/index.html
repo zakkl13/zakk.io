@@ -4,37 +4,57 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <html>
 
 <head>
-	<title>Zakk Lefkowits | Hompage</title>
+	<meta charset="UTF-8">
+	<title>Zakk Lefkowits | Homepage</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='style.css' rel='stylesheet' type='text/css'>
-	<script type="text/javascript">
-		
-		function change() {
-			var base = 'I like to write code and '
-
-			var nouns = ['the Oxford comma.', 
-					'corporate America.', 
-      				     	'camelCasing.',
-				     	' the World Wide Web.',
-				     	'*nix.', 
-					'input/output.' ]
-
-			var actions = ['argue about ',
-					'get lost in thought thinking about ',
-					'get into fights over ',
-					'fantasize about ', 
-					'save small children from ']
-
-			var rand_idx_actions = Math.floor(Math.random() * actions.length)
-			var rand_idx_nouns = Math.floor(Math.random() * nouns.length)
-			document.getElementById("rotate").innerHTML = base + actions[rand_idx_actions] + nouns[rand_idx_nouns];
-		}
-	</script>
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<script src="js/scriptz.js"></script>
 </head>
 
 <body>
+	<div class="container">
+		<div class="row">
+			<h1 id="logo">Zakk.io</h1>
+		</div>
+		<div class="row">
+			<div class="two columns u-full-width">
+				<a class="button button-primary" href="#">Home</a>
+			</div>
+			<div class="two columns u-full-width">
+				<a class="button button-primary" href="#">Resume</a>
+			</div>
+			<div class="two columns u-full-width">
+				<a class="button button-primary" href="#">Blog</a>
+			</div>
+			<div class="two columns u-full-width">
+				<a class="button button-primary" href="#">GitHub</a>
+			</div>
+			<div class="two columns u-full-width">
+				<a class="button button-primary" href="#">LinkedIn</a>
+			</div>
+			<div class="two columns u-full-width" style="float: right">
+				<a class="button button-primary" href="#">Twitter</a>
+			</div>
+		</div>
+		<div class="row"  style="margin-top: 15px;">
+			<div class="box">
+				<h4>Hi, my name is Zakk Lefkowits.</h4>
+				<!-- <p id="rotate"></p> -->
+				<p>I like to write clean and efficient code, solve problems, and generally be a badass.</p>
+				<p>Welcome to the site, check out the links above!<br />
+					If you are interested in getting in contact shoot me an email at: <a href="mailto:zakk@zakk.io">Zakk@zakk.io</a></p>
+			</div>
+		</div>
+	</div>
 	<!-- <div id="header"></div> -->
-	<h1 id="logo">Zakk.io</h1>
+	<!-- <h1 id="logo">Zakk.io</h1>
 	<div id="container">
 		<div id="welcome">
 		<h2>Hi, My name is Zakk. </h2>
@@ -44,7 +64,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		<h3>Check out the <a href="https://github.com/zakkl13/zakk.io/">source code</a> for this splash page, and the future webpage on Github.</h3>
 		<h3> If you want to get in touch, send me an email: <a href="zakk@zakk.io">Zakk@zakk.io</a></h3>
 		</div>
-    </div>
+    </div> -->
 	<script>
 		change()
 	</script>
