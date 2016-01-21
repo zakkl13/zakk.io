@@ -25,27 +25,27 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		</div>
 		<div class="row">
 			<div class="two columns u-full-width">
-				<a class="button button-primary" onclick="change_page(0)">Home</a>
+				<a class="home button button-primary unselectable" onclick="change_page(0)" href="#">Home</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" onclick="change_page(1)">Resume</a>
+				<a class="resume button button-primary unselectable" onclick="change_page(1)" href="#resume" >Resume</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" onclick="change_page(2)">Blog</a>
+				<a class="blog button button-primary unselectable" href="#blog" onclick="change_page(2)">Blog</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" href="https://github.com/zakkl13">GitHub</a>
+				<a class="button button-primary unselectable" target="_blank" href="https://github.com/zakkl13">GitHub</a>
 			</div>
-			<div class="two columns u-full-width">
-				<a class="button button-primary" href="https://www.linkedin.com/in/zakklefkowits">LinkedIn</a>
+			<div class="two columns u-full-width unselectable">
+				<a class="button button-primary" target="_blank" href="https://www.linkedin.com/in/zakklefkowits">LinkedIn</a>
 			</div>
-			<div class="two columns u-full-width" style="float: right">
-				<a class="button button-primary" href="https://twitter.com/ZakkLefkowits">Twitter</a>
+			<div class="two columns u-full-width unselectable" style="float: right">
+				<a class="button button-primary" target="_blank" href="https://twitter.com/ZakkLefkowits">Twitter</a>
 			</div>
 		</div>
 		<div class="row"  style="margin-top: 15px;">
-			<div class="box" id="home">
-				<h4>Hi, my name is Zakk Lefkowits.</h4>
+			<div class="box" id="home" style="display:none">
+				<h4>Hi, my name is Zakk.</h4>
 				<!-- <p id="rotate"></p> -->
 				<p>I like to write clean and efficient code, solve problems, and generally be a badass.</p>
 				<p>Welcome to the site, check out the links above!<br />
