@@ -1,3 +1,30 @@
+function page(id, url) {
+  this.id = id;
+  this.url = url;
+  this.hide = function() {
+    document.getElementById(this.id).style.display = "none";
+  };
+  this.show = function() {
+    document.getElementById(this.id).style.display = "";
+  };
+}
+
+var pages = [new page("home", "http://zakk.io"), new page("resume", "http://zakk.io/resume"), new page("blog", "http://zakk.io/blog")];
+var current_page = pages[0];
+
+// for (var i = 0; i < pages.length; i++){
+//   pages[i].hide();
+// }
+//
+// current_page.show();
+
+function change_page(idx) {
+  console.log("changing from: " + current_page + " to: " + pages[idx]);
+  current_page.hide();
+  pages[idx].show();
+  current_page = pages[idx];
+}
+
 function change() {
   var base = 'I like to write code and '
 

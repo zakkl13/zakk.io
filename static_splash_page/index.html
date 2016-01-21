@@ -25,31 +25,40 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		</div>
 		<div class="row">
 			<div class="two columns u-full-width">
-				<a class="button button-primary" href="#">Home</a>
+				<a class="button button-primary" onclick="change_page(0)">Home</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" href="#">Resume</a>
+				<a class="button button-primary" onclick="change_page(1)">Resume</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" href="#">Blog</a>
+				<a class="button button-primary" onclick="change_page(2)">Blog</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" href="#">GitHub</a>
+				<a class="button button-primary" href="https://github.com/zakkl13">GitHub</a>
 			</div>
 			<div class="two columns u-full-width">
-				<a class="button button-primary" href="#">LinkedIn</a>
+				<a class="button button-primary" href="https://www.linkedin.com/in/zakklefkowits">LinkedIn</a>
 			</div>
 			<div class="two columns u-full-width" style="float: right">
-				<a class="button button-primary" href="#">Twitter</a>
+				<a class="button button-primary" href="https://twitter.com/ZakkLefkowits">Twitter</a>
 			</div>
 		</div>
 		<div class="row"  style="margin-top: 15px;">
-			<div class="box">
+			<div class="box" id="home">
 				<h4>Hi, my name is Zakk Lefkowits.</h4>
 				<!-- <p id="rotate"></p> -->
 				<p>I like to write clean and efficient code, solve problems, and generally be a badass.</p>
 				<p>Welcome to the site, check out the links above!<br />
 					If you are interested in getting in contact shoot me an email at: <a href="mailto:zakk@zakk.io">Zakk@zakk.io</a></p>
+			</div>
+			<div class="box" id="resume" style="display:none">
+				<h4>Zakk Lefkowits</h4>
+				<p>Student at Virginia Tech - expected graduation May 2017<br />
+					 B.S. Computer Science and Mathematics minor.<br />
+				   GPA: <strong>3.40</strong></p>
+			</div>
+			<div class="box" id="blog" style="display:none">
+				<h4>Coming soon!</h4>
 			</div>
 		</div>
 	</div>
@@ -65,8 +74,5 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		<h3> If you want to get in touch, send me an email: <a href="zakk@zakk.io">Zakk@zakk.io</a></h3>
 		</div>
     </div> -->
-	<script>
-		change()
-	</script>
 </body>
 </html>
