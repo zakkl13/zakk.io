@@ -21,9 +21,41 @@ a, a:visited, a:active, a:hover {
 	height: 70px
 }
 
+#mouseOver {
+    display: inline;
+    position: relative;
+}
+
+#mouseOver img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1em;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 800ms;    
+}
+
+#mouseOver:hover img {
+    opacity: 1;
+    transition-duration: 400ms;
+}
+
 /*#rotate {
   font-size: 150%;
 }*/
+
+.resume-section {
+	margin-left:1em;
+}
+
+.resume-list {
+	margin-left:3em;
+}
+
+.resume-bullet {
+	margin-bottom: 0rem;
+}
 
 .box {
     color: #000;

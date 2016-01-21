@@ -54,7 +54,7 @@ function change() {
   document.getElementById("rotate").innerHTML = base + actions[rand_idx_actions] + nouns[rand_idx_nouns];
 }
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function(event) {
   console.log(location.href);
   var url = String(location.href);
   current_page = 0;
@@ -67,6 +67,22 @@ window.onload = function () {
     }
   }
   pages[current_page].show();
+  });
 
 
-}
+// window.onload = function () {
+  // console.log(location.href);
+  // var url = String(location.href);
+  // current_page = 0;
+  // var page_idx = 0;
+  // for (var q = 0; q < pages.length; q++) {
+    // if (url.indexOf("#" + pages[q].id) != -1) {
+      // console.log("hit on " + q);
+      // current_page = q;
+      // break;
+    // }
+  // }
+  // pages[current_page].show();
+
+
+// }

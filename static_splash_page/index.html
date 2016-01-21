@@ -10,7 +10,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/ico" href="images/favicon.ico" />
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -36,11 +36,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 			<div class="two columns u-full-width">
 				<a class="button button-primary unselectable" target="_blank" href="https://github.com/zakkl13">GitHub</a>
 			</div>
-			<div class="two columns u-full-width unselectable">
-				<a class="button button-primary" target="_blank" href="https://www.linkedin.com/in/zakklefkowits">LinkedIn</a>
+			<div class="two columns u-full-width">
+				<a class="button button-primary unselectable" target="_blank" href="https://www.linkedin.com/in/zakklefkowits">LinkedIn</a>
 			</div>
-			<div class="two columns u-full-width unselectable" style="float: right">
-				<a class="button button-primary" target="_blank" href="https://twitter.com/ZakkLefkowits">Twitter</a>
+			<div class="two columns u-full-width" style="float: right">
+				<a class="button button-primary unselectable" target="_blank" href="https://twitter.com/ZakkLefkowits">Twitter</a>
 			</div>
 		</div>
 		<div class="row"  style="margin-top: 15px;">
@@ -52,27 +52,45 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 					If you are interested in getting in contact shoot me an email at: <a href="mailto:zakk@zakk.io">Zakk@zakk.io</a></p>
 			</div>
 			<div class="box" id="resume" style="display:none">
-				<h4>Zakk Lefkowits</h4>
-				<p>Student at Virginia Tech - expected graduation May 2017<br />
-					 B.S. Computer Science and Mathematics minor.<br />
-				   GPA: <strong>3.40</strong></p>
+				<h3>Zakk Lefkowits</h3>
+				<p class="resume-section">Student at Virginia Tech - expected graduation May 2017<br />
+					B.S. Computer Science and Mathematics minor.<br />
+				   GPA (in-major): <span id="mouseOver"><image src="images/gpa_progression.png"><strong>3.40 (3.61)</strong></p></span>
+				<h5>Work Experience</h5>
+				<span class="resume-section">
+					Software Engineer Coop, Solers inc.
+						<ul class="resume-list">
+							<li class="resume-bullet">
+								Systems
+								<ul>
+									<li class="resume-bullet">Built an application in Python (2.7.1) to monitor Docker containers on CentOS</li>
+								</ul>
+							</li>
+							<li class="resume-bullet">
+								Web
+								<ul>
+									<li class="resume-bullet">Developed a module within a JavaScript framework to display data using the <a href="http://d3js.org/">D3</a> library.</li>
+								</ul>
+							</li>
+						</ul>
+				</span>
+				<span class="resume-section">
+					Computer Associate, University Bookstore - Virginia Tech.
+						<ul class="resume-list">
+							<li class="resume-bullet">Worked hella hard</li>
+							<li class="resume-bullet">was the best</li>
+						</ul>
+				</span>
+				<h5>Activities & Awards</h5>
+					<ul class="resume-section">
+							<li class="resume-bullet">Treasurer, Phi Kappa Tau Fraternity - Spring 15'-present</li>
+							<li class="resume-bullet">Dean's List w/ Distinction (3.75+) - Fall '14, Spring '15, Summer '15</li>
+						</ul>
 			</div>
 			<div class="box" id="blog" style="display:none">
 				<h4>Coming soon!</h4>
 			</div>
 		</div>
 	</div>
-	<!-- <div id="header"></div> -->
-	<!-- <h1 id="logo">Zakk.io</h1>
-	<div id="container">
-		<div id="welcome">
-		<h2>Hi, My name is Zakk. </h2>
-		<h3 id="rotate"></h3></div>
-		<div id ="welcome">
-		<h3>I'm hard at work on the site, check back soon.</h3>
-		<h3>Check out the <a href="https://github.com/zakkl13/zakk.io/">source code</a> for this splash page, and the future webpage on Github.</h3>
-		<h3> If you want to get in touch, send me an email: <a href="zakk@zakk.io">Zakk@zakk.io</a></h3>
-		</div>
-    </div> -->
 </body>
 </html>
