@@ -29,11 +29,11 @@ a, a:visited, a:active, a:hover {
 #mouseOver img {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%. -50%);
     bottom: 1em;
     opacity: 0;
     pointer-events: none;
-    transition-duration: 800ms;    
+    transition-duration: 800ms;
 }
 
 #mouseOver:hover img {

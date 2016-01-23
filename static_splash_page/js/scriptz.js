@@ -55,13 +55,11 @@ function change() {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log(location.href);
   var url = String(location.href);
   current_page = 0;
   var page_idx = 0;
   for (var q = 0; q < pages.length; q++) {
     if (url.indexOf("#" + pages[q].id) != -1) {
-      console.log("hit on " + q);
       current_page = q;
       break;
     }
