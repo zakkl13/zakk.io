@@ -5,8 +5,8 @@ resource "aws_route53_record" "zakk-io" {
     type = "A"
 
     alias {
-        name = "s3-website-us-east-1.amazonaws.com"
-        zone_id = "Z3AQBSTGFYJSTF"
+        name = "${aws_cloudfront_distribution.s3_distribution.domain_name}"
+        zone_id = "${aws_cloudfront_distribution.s3_distribution.hosted_zone_id}"
         evaluate_target_health = false
     }
 }
