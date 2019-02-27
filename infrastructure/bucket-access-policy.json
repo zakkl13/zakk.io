@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1551242567845",
+    "Statement": [
+        {
+            "Sid": "2",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E3UR6A2AHQOK0U"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::zakk.io/*"
+        }
+    ]
+}
