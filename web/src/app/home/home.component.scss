@@ -1,0 +1,67 @@
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7)}
+    to {opacity: 1;}
+}
+
+$textAnimTime: 1.2s;
+
+.hi {
+    animation: fade-in $textAnimTime;
+    animation-delay: 0s;
+}
+
+.hello {
+    opacity: 0;
+    animation: fade-in $textAnimTime forwards;
+    animation-delay: $textAnimTime - 0.2s;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.header {
+    flex: 0 1 auto;
+}
+
+$mainVhHeight:70vh;
+$fillHeight:(100vh-$mainVhHeight)/2;
+
+$smMainVhHeight: 88vh;
+$smFillHeight:(100vh-$smMainVhHeight)/2;
+
+.dummy-fill {
+    @media(min-width: 768px) {
+        height: $fillHeight;
+    }
+    @media(max-width: 767.98px) {
+        height: $smFillHeight;
+    }
+}
+
+.main {
+    @media(min-width: 768px) {
+        height: $mainVhHeight;
+    }
+    @media(max-width: 767.98px) {
+        height: $smMainVhHeight;
+    }
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.container {
+    height: 100vh;
+}
+
+.footer {
+    flex: 0 1 auto;
+    height: $fillHeight;
+}
+
+h1 {
+    @media(max-width: 767.98px) {
+        font-size: 2rem;
+    }
+}
