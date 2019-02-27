@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="dummy-fill"></div>
+  <div class="main">
+  <div class="header row">
+    <div class="col-md-12 text-center">
+      <h1 class="display-2"><span class="hi">Hi,</span><span class="hi hello"> my name is Zakk.</span></h1>
+    </div>
+  </div>
+  <div class="row content align-items-center">
+    <div class="col-md-4">
+      <app-key-link src="assets/linkedin.png" text="Professional" [link]="linkedinUrl"></app-key-link>
+    </div>
+    <div class="col-md-4">
+      <app-key-link src="assets/github.png" text="Code" [link]="githubUrl"></app-key-link>
+    </div>
+    <div class="col-md-4">
+      <app-key-link src="assets/projects.png" text="Projects" [link]="projectUrl"></app-key-link>
+    </div>
+  </div>
+  <div class="row footer">
+    <div class="col-md-12 text-center">
+        <p class="lead justify-content-center">Want to get in touch? Shoot me an <a href="mailto:{{email}}">email</a></p>
+        <p class="muted">Copyright &copy; {{currentYear}} Zakk Lefkowits</p>
+    </div>
+  </div>
+</div>
+</div>
