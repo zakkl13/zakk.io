@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   linkedinUrl = 'https://www.linkedin.com/in/zakklefkowits/';
   githubUrl = 'https://github.com/zakkl13';
-  projectUrl = '/projects';
+  projectUrl = 'projects';
   email = 'zakkl13@vt.edu';
   currentYear = (new Date()).getFullYear();
 
