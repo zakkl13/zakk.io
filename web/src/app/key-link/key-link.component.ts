@@ -9,7 +9,9 @@ export class KeyLinkComponent implements OnInit {
 
   @Input() src = '';
   @Input() link = '#';
+  @Input() internalLink;
   @Input() text: string;
+
 
   constructor() { }
 
